@@ -1,0 +1,53 @@
+:root  {
+    --bg-color: #fff;
+    --font-family:'DM Sans', sans-serif;
+    --font-family-secondry: 'Poppins', sans-serif;
+    --color: #232323;
+    --blue-color:#3484fc;
+    --color-light: #ECF2F6;
+    --light-blue-color: #000
+}
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 75%;
+    background: #fff;
+    border-radius: 50px;
+    padding: 15px 5rem;
+    left: 13%;
+    justify-content: space-between;
+    z-index: 255;
+}
+.bottom-nav ul{
+    width: 100%;
+    justify-content: space-between;
+}
+.we-hiring{
+    background:var(--blue-color);
+    padding: 10px;
+    color: #fff;
+    border-radius: 50px;
+}
+.contact-header ul{
+display: flex;
+align-items: center;
+justify-self: center;
+}
+.contact-header ul li{
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.contact-header ul li i{
+    padding-right: 5px;
+}
+.contact-header ul li:not(:last-child)::before{
+    content: '';
+    width: 1px;
+    height: 100%;
+    background-color: #232323;
+    position: absolute;
+    right: -5px;
+    opacity: 0.5;
+}
