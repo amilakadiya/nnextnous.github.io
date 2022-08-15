@@ -54,7 +54,30 @@ justify-self: center;
     right: -5px;
     opacity: 0.5;
 }
-
+/* services */
+.services-icon {
+    width: 45px;
+    height: 45px;
+    background: #000;
+    color: #fff;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.services-text h5{
+    font-size: 20px;
+}
+.services-grid{
+    border-radius: 10px;
+    background-color: #fff;
+    background: #fff;
+    border-image-source:none
+}
+.services-section{
+    background-color: transparent;
+}
 @media only screen and (min-width: 1200px) and (max-width: 1399px){
     .container {
         max-width: 90%;
