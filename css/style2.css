@@ -7,9 +7,12 @@
     --color-light: #ECF2F6;
     --light-blue-color: #000
 }
+body{
+    background-color: #F3F4F6;
+}
 .bottom-nav {
     position: fixed;
-    bottom: 0;
+    bottom: 10px;
     width: 75%;
     background: #fff;
     border-radius: 50px;
@@ -50,4 +53,12 @@ justify-self: center;
     position: absolute;
     right: -5px;
     opacity: 0.5;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px){
+    .container {
+        max-width: 90%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }
