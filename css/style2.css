@@ -71,6 +71,7 @@ justify-self: center;
 }
 .services-grid{
     border-radius: 10px;
+    border: 1px solid #FFFFFF;
     /* background: linear-gradient(180deg, #3484fc6b 0%, rgb(161 198 254 / 64%) 100%);
     border-image-source: linear-gradient(90deg, #3484fc 0%, rgb(188 224 248 / 0%) 70.31%); */
 }
@@ -86,6 +87,105 @@ justify-self: center;
 .ml-auto{
     margin-left: auto;
 }
+/* working */
+.working-step-icon{
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: var(--blue-color);
+}
+.working-step h6{
+margin-bottom: 5px;
+font-size: 22px;
+}
+.working-step:before {
+    content: '1';
+    font-size: 126px;
+    z-index: -2;
+    background: linear-gradient(to top, #EFF0F4 45%, #D6D8E3  62%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    right: 0;
+    top: -42px;
+    font-family: fantasy;
+}
+.working-section{
+    background: transparent;
+}
+.working-section .row{
+    position: relative;
+}
+.working-section .row::before{
+    content: '';
+    background: url(../img/line.svg);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    top: -123px;
+    background-size: contain;
+    left: -350px;
+    z-index: -1;
+}
+.working-step {
+    position: relative;
+    max-width: 310px;
+    margin-right: 10px;
+}
+.working-step p{
+    font-size: 14px;
+    color: #232323;
+}
+.working-step:first-child{
+    margin-top: 9.5rem;
+    margin-left: 14%;
+}
+.working-step:nth-child(2){
+    margin-top: 3rem;
+}
+.working-step:nth-child(3){
+    margin-top: -9rem;
+}
+.tech-box{
+    width: 140px;
+    height: 70px;
+    padding: 10px;
+    margin: 0px 15px 15px 0px;
+}
+.tech-box img {
+ width:85%;
+    height: 90%;
+}
+.tech-box-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* .tech-box {
+    background: transparent;
+    box-shadow: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px;
+    width: 110px;
+    margin: 0px 10px;
+    font-size: 25px;
+}
+.tech-box i{
+    font-size: 35px;
+    margin-right: 10px;
+} */
 @media only screen and (min-width: 1200px) and (max-width: 1399px){
     .container {
         max-width: 90%;
