@@ -283,7 +283,7 @@ nav.navbar.navbar-expand-lg.sticky-top.fixed {
     transition: all 0.3s ease-in-out;
     margin-bottom: 40px;
     position: relative;
-
+    box-shadow: 0px 1px 16px 0px rgb(0 0 0 / 10%);
 }
 .services-grid:hover{
     background: linear-gradient(180deg, #3484fc6b 0%, rgb(161 198 254 / 64%) 100%);

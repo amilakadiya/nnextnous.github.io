@@ -71,12 +71,20 @@ justify-self: center;
 }
 .services-grid{
     border-radius: 10px;
-    background-color: #fff;
-    background: #fff;
-    border-image-source:none
+    /* background: linear-gradient(180deg, #3484fc6b 0%, rgb(161 198 254 / 64%) 100%);
+    border-image-source: linear-gradient(90deg, #3484fc 0%, rgb(188 224 248 / 0%) 70.31%); */
 }
 .services-section{
     background-color: transparent;
+}
+.view-more{
+    max-width: 150px;
+    padding: 15px 20px;
+    margin-left: auto;
+    margin-right: 10px;
+}
+.ml-auto{
+    margin-left: auto;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px){
     .container {
