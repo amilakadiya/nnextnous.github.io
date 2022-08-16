@@ -46,7 +46,24 @@ $('.Protfolio').slick({
     slidesToScroll: 3,
     dots: true,
     autoplay: false,
-    autoplaySpeed: 2000
+    autoplaySpeed: 2000,
+    responsive: [
+        {
+          breakpoint: 994,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            adaptiveHeight: true,
+          },
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+      ],
     
   });
 
