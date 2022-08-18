@@ -337,6 +337,9 @@ footer{
     align-items: center;
     justify-content: center;
 }
+.contact-header-mobile{
+    display: none;
+}
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px){
     .container {
@@ -384,12 +387,28 @@ footer{
         padding: 20px;
         flex-direction: row;
         align-items: flex-start;
+        border-radius: 0px;
+        box-shadow: none;
     }
-    
-    div#navbarSupportedContent {
+    .we-hiring{
+        display: none;
+    }
+    .bottom-nav {
         height: 100%;
-        bottom: -70px;
+        bottom: -66px;
         transition: all 0.5s;
+    }
+    .contact-header-mobile {
+        display: block;
+        position: absolute;
+        top: 25rem;
+        left: 20px;
+    }
+    .contact-header ul li:not(:last-child)::before{
+        opacity: 0;
+    }
+    .navbar-contain ul li{
+        display: inline-flex;
     }
 }
 @media only screen and (max-width: 767px) {
@@ -406,7 +425,9 @@ footer{
     .working-section .row::before{
         display: none;
     }
-   
+    .navbar-brand img {
+        width: 200px;
+    }
     .tiitle-section {
         width: 100%;
     }
