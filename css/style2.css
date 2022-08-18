@@ -389,6 +389,7 @@ footer{
         align-items: flex-start;
         border-radius: 0px;
         box-shadow: none;
+        display: grid;
     }
     .we-hiring{
         display: none;
@@ -400,15 +401,17 @@ footer{
     }
     .contact-header-mobile {
         display: block;
-        position: absolute;
-        top: 25rem;
-        left: 20px;
+        position: relative;
+        bottom: -67px;
     }
     .contact-header ul li:not(:last-child)::before{
         opacity: 0;
     }
     .navbar-contain ul li{
         display: inline-flex;
+    }
+    .contact-header-destop{
+        display: none;
     }
 }
 @media only screen and (max-width: 767px) {
@@ -439,7 +442,9 @@ footer{
     }
     .footer-contain:first-child a {
         font-size: 20px;
-
+    }
+    .slider-img-section {
+        padding-top: 2rem;
     }
 }
 
