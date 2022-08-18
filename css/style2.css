@@ -27,7 +27,8 @@ body{
     left: 0px;
 }
 .slick-slide .protfolio-img img {
-    min-height: 450px;
+    min-height: 320px;
+    max-height: 320px;
 }
 .navbar-contain {
     background: #fff;
@@ -122,8 +123,8 @@ flex-wrap: wrap;
     color: var(--blue-color);
 }
 .working-step h6{
-margin-bottom: 5px;
-font-size: 22px;
+    margin-bottom: 5px;
+    font-size: 22px;
 }
 .working-step:before {
     content: '1';
@@ -136,6 +137,12 @@ font-size: 22px;
     right: 0;
     top: -42px;
     font-family: fantasy;
+}
+.working-step:nth-child(2)::before{
+    content: '2';
+}
+.working-step:nth-child(3)::before{
+    content: '3';
 }
 .working-section{
     background: transparent;
@@ -338,10 +345,51 @@ footer{
         padding-right: 30px;
     }
 }
+@media only screen and (max-width : 1280px) {
+    .working-step:first-child {
+        margin-left: 7%;
+    }
+    .working-step {
+        max-width: 270px;
+    }
+    .working-section .row::before{
+        left: -280px;
+    }
+}
 @media only screen and (max-width : 992px) {
     .tech-box {
         width: 90px;
         height: 60px;
+    }
+    /* .bottom-nav {
+        top: 70px;
+        height: 100%;
+        width: 100%;
+        border-radius: 0px;
+        transition: all 0.5s ease-in-out;
+    }
+    .navbar-contain {
+        top: 0;
+        bottom: inherit;
+        height: calc(100% - 70px);
+        border-radius: 0px;
+        box-shadow: none;
+        display: flex;
+        align-items: baseline;
+        justify-content: flex-start;
+        padding: 20px;
+    } */
+    .navbar-contain {
+        min-height: 100%;
+        padding: 20px;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    
+    div#navbarSupportedContent {
+        height: 100%;
+        bottom: -70px;
+        transition: all 0.5s;
     }
 }
 @media only screen and (max-width: 767px) {
