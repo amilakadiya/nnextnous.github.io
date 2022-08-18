@@ -413,6 +413,9 @@ footer{
     .contact-header-destop{
         display: none;
     }
+    .text-right {
+        text-align: center;
+    }
 }
 @media only screen and (max-width: 767px) {
     .working-step:first-child {
@@ -437,14 +440,29 @@ footer{
     .tiitle-container{
         flex-direction: column;
     }
-    .slick-slide .protfolio-img img {
-        min-height: 260px;
-    }
     .footer-contain:first-child a {
         font-size: 20px;
     }
     .slider-img-section {
         padding-top: 2rem;
+    }
+    .container {
+        width: 95%;
+        margin: auto;
+    }
+    .working-step {
+        max-width: 100%;
+        margin: auto;
+    }
+    .view-more {
+        max-width: 95%;
+        text-align: center;
+    }
+    .lets-work-contain {
+        padding: 10px;
+    }
+    .lets-work-contain h2 {
+        font-size: 33px;
     }
 }
 
