@@ -301,7 +301,7 @@ flex-wrap: wrap;
 }
 /* footer */
 footer{
-    margin: 0px 0px 6rem 0px;
+    margin: 2rem 0px 6rem 0px;
 }
 .footer-contain span {
     font-size: 15px;
@@ -341,6 +341,27 @@ footer{
     display: none;
 }
 
+/* about us */
+.about-services-img{
+    box-shadow: 0 10px 60px 0 rgb(89 86 233 / 10%);
+    padding: 25px;
+    border-radius: 12px;
+    margin-top: 2rem;
+}
+.about-technologie-logo img{
+    width: 60px;
+    height: 70px;
+    padding-bottom: 5px;
+}
+.about-technologie-logo{
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-technologies{
+    margin-top: 2rem;
+}
 @media only screen and (min-width: 1200px) and (max-width: 1399px){
     .container {
         max-width: 90%;
@@ -413,8 +434,11 @@ footer{
     .contact-header-destop{
         display: none;
     }
-    .text-right {
+    /* .text-right {
         text-align: center;
+    } */
+    h1 {
+        font-size: 42px;
     }
 }
 @media only screen and (max-width: 767px) {
@@ -463,6 +487,13 @@ footer{
     }
     .lets-work-contain h2 {
         font-size: 33px;
+    }
+    h1 {
+        font-size: 32px;
+        line-height: 36px;
+    }
+    .banner-slider img{
+        margin-top: 2rem;
     }
 }
 

@@ -1,13 +1,23 @@
 var span = document.querySelector(".typewriter span");
-var textArr = span.getAttribute("data-text").split(", "); 
-var maxTextIndex = textArr.length; 
-
+if(span != null){
+    var textArr = span.getAttribute("data-text").split(", "); 
+}
+if(textArr != null){
+    var maxTextIndex = textArr.length;
+}
+else{
+    var maxTextIndex = null
+}
 var sPerChar = 0.15; 
 var sBetweenWord = 1.5;
 var textIndex = 0; 
 
-typing(textIndex, textArr[textIndex]); 
-
+if(textArr != null){
+    typing(textIndex, textArr[textIndex]); 
+}
+else{
+    var textArr = null
+}
 function typing(textIndex, text) {
     var charIndex = 0; 
     var maxCharIndex = text.length - 1; 
@@ -67,7 +77,35 @@ $('.Protfolio').slick({
       ],
     
   });
-
+  
+  $('.about-technologies').slick({
+    infinite: true,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    dots: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false,
+    responsive: [
+        {
+          breakpoint: 994,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 2,
+            adaptiveHeight: true,
+          },
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+      ],
+    
+  });
+  
   (() => {
     'use strict'
   
