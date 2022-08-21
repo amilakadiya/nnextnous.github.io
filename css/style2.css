@@ -376,6 +376,7 @@ footer{
 
 .services-boxs-left {
     padding-right: 20px;
+    margin-bottom: 20px;
 }
 
 .services-box-right {
@@ -387,6 +388,15 @@ footer{
     display: -webkit-box;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
+}
+.find-more-link {
+    display: flex;
+    align-items: center;
+    /* color: var(--blue-color); */
+}
+
+.find-more-link i {
+    margin-right: 10px;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px){
     .container {
