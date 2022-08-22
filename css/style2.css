@@ -399,34 +399,7 @@ footer{
     margin-right: 10px;
 }
 /* protfolio */
-.nav-tabs {
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-    background: #fff;
-    border: 0px;
-}
-.nav-tabs li {
-    padding: 10px 20px;
-}
-ul.nav-tabs button.active {
-    box-shadow: 0px 15px 30px rgb(57 81 105 / 5%);
-    border: 0px;
-    background-color: #f3f4f6 !important;
-    border-radius: 0px;
-}
-.nav-tabs .nav-link:focus{
-border-color: #ffffff;
-}
-ul.nav-tabs button {
-    padding: 15px 20px;
-    width: 100%;
-    color: #000;
-    transition: all 0.5s ease-in-out;
-}
-ul.nav-tabs button:hover {
-    border-color: #fff !important;
-}
+
 .protfolio-box-img{
     border-radius: 20px;
     overflow: hidden;
@@ -598,57 +571,53 @@ ul.nav-tabs button:hover {
   .portfolio:hover .portfolio-bg{
     transform: scale(1.2)
   }
-  .first .portfolio-bg{
-    background-image: url('https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?cs=srgb&dl=accounts-applications-apps-267350.jpg&fm=jpg');
-    
-  }
-  .second .portfolio-bg{
-    background-image: url('https://images.pexels.com/photos/1053687/pexels-photo-1053687.jpeg?cs=srgb&dl=art-art-materials-artwork-1053687.jpg&fm=jpg');
-  }
-  .third .portfolio-bg{
-    background-image: url('https://images.pexels.com/photos/6224/hands-people-woman-working.jpg?cs=srgb&dl=brainstorming-campaign-collaborate-6224.jpg&fm=jpg');
-    
-  }
-  .portfolio .label {
-    position: absolute;
-    width: 100%;
-    height:100%;
-    bottom: 0;
-    transition: 0.5s;
-    opacity: 0;
-    visibility: hidden
+.contact-us-box{
+    box-shadow: 0 20px 48px 0 rgb(153 161 170 / 25%);
+    background: #fff;
+    border-radius: 25px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+::placeholder {
+    color: #EFF1F6;
+    opacity: 0.2; /* Firefox */
   }
   
-  .portfolio .label-bg {
-    background: #232323;
-    opacity: 0.7;
-    width: 100%;
-    height:100%;
-    position: absolute;
-    top:0;
-    left:0;
-    transition: 1px;
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #8A90A2;
   }
-  .portfolio .label-text {
-    color:#fff;
-    position: relative;
-    z-index:500;
-    padding:50px 20px;
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+   color: #8A90A2;
   }
-  .portfolio:hover .label {
-    opacity: 1;
-    visibility: visible;
+  .form-control{
+    line-height: 2.5;
+    border: 1px solid #EFF1F6;
   }
-  .portfolio .text-category {
-    display:block;
+  .form-control:focus{
+    box-shadow:none;
+    border-color:#dbdcdf;
   }
-  .portfolio .template-btn {
-    background: #e30b5d;
-    border: 1px solid #e30b5d;
-    text-decoration: none;
-    margin-top: 20px;
-    font-weight: 500
-  }
+  .contact-us-box .btn-blue {
+    width: 170px;
+}
+.contact-detail-box{
+    background-color: #27272E;
+    width: 80%;
+    margin: auto;
+    color: #fff;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 9px 18px 0 rgb(0 0 0 / 25%);
+    margin-bottom: 30px;
+}
+.contact-detail-box p{
+    color: #999FAE;
+}
+.text-large{
+    color: var(--blue-color);
+    font-size: 29px;
+}
 @media only screen and (min-width: 1200px) and (max-width: 1399px){
     .container {
         max-width: 90%;
@@ -808,6 +777,15 @@ ul.nav-tabs button:hover {
     .project-item {
         margin-bottom: 1.5rem;
     }
-    
+    .text-large {
+        color: 22;
+        font-size: 14px;
+    }
+    .contact-detail-box {
+        width: 100%;
+    }
+    .contact-us-box{
+        padding: 1.2rem;
+    }
 }
 
