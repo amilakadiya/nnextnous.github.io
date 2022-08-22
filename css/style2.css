@@ -796,5 +796,9 @@ footer{
     .contact-us-box{
         padding: 1.2rem;
     }
+    .protfolio-box-contain {
+        top: 39px;
+        background-color: #292930;
+    }
 }
 
