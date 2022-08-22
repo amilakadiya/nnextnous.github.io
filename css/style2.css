@@ -471,6 +471,184 @@ ul.nav-tabs button:hover {
 .project-item:hover .protfolio-box-contain{
     left: 0px;
 }
+.template-btn {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 12px 20px;
+    display: inline-block;
+    background: transparent;
+    cursor: pointer;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+  }
+  .template-btn:hover {
+    color: white;
+    background: #f28500;
+  }
+  .portfolio-section {
+    padding-top: 30px;
+    transition: 1.3s;
+    box-sizing: border-box;
+    height: auto;
+  }
+  
+  .portfolio-tab ul {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    flex-wrap: wrap;
+    background: #fff;
+    border: 0px;
+    width: 85%;
+    padding: 10px 20px;
+  }
+  .portfolio-tab ul li {
+    color: #000;
+    background: transparent;
+    display: inline;
+    padding: 15px 35px;
+    margin: 0 5px;
+    cursor: pointer;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+  }
+  /* .portfolio-tab ul li:not(:first-child,:last-child)::before {
+    content: "";
+    height: 40px;
+    width: 1px;
+    top: 50%;
+    right: -14px;
+    background: #E4E6EA;
+    transform: translateY(-50%);
+    position: absolute;
+    z-index: 1;
+} */
+  .portfolio-tab ul li.active{
+    box-shadow: 0px 15px 30px rgb(57 81 105 / 5%);
+    border: 0px;
+    background-color: #f3f4f6 !important;
+    border-radius: 0px;
+  }
+  @media (max-width: 575.98px) {
+    .portfolio-tab ul li {
+      display: block;
+      margin: 10px auto;
+      max-width: 200px;
+    }
+  }
+  .portfolio-tab ul li:hover {
+   color: var(--blue-color);
+  }
+  .portfolio-tab ul .active {
+    box-shadow: 0px 15px 30px rgb(57 81 105 / 5%);
+    border: 0px;
+    background-color: #f3f4f6 !important;
+    border-radius: 0px;
+  }
+  .clearfix:after {
+    display: table;
+    content: " ";
+    clear: both;
+  }
+  .portfolio-grid {
+    margin-top: 50px;
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 300px; */
+  }
+  @media (max-width: 768px) {
+    .portfolio-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  @media only screen and (min-width: 768.1px) and (max-width: 991px) {
+    .portfolio-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }		
+    }
+  .portfolio-grid .portfolio {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -o-box-sizing: border-box;
+      display:none;
+      overflow:hidden;
+  }
+  .portfolio-wrapper {
+    overflow:hidden;
+    position: relative !important;
+    cursor:pointer;
+  }
+  .portfolio-bg {
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: 1s;
+    transform: scale(1)
+  }
+  .portfolio:hover .portfolio-bg{
+    transform: scale(1.2)
+  }
+  .first .portfolio-bg{
+    background-image: url('https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?cs=srgb&dl=accounts-applications-apps-267350.jpg&fm=jpg');
+    
+  }
+  .second .portfolio-bg{
+    background-image: url('https://images.pexels.com/photos/1053687/pexels-photo-1053687.jpeg?cs=srgb&dl=art-art-materials-artwork-1053687.jpg&fm=jpg');
+  }
+  .third .portfolio-bg{
+    background-image: url('https://images.pexels.com/photos/6224/hands-people-woman-working.jpg?cs=srgb&dl=brainstorming-campaign-collaborate-6224.jpg&fm=jpg');
+    
+  }
+  .portfolio .label {
+    position: absolute;
+    width: 100%;
+    height:100%;
+    bottom: 0;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden
+  }
+  
+  .portfolio .label-bg {
+    background: #232323;
+    opacity: 0.7;
+    width: 100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    transition: 1px;
+  }
+  .portfolio .label-text {
+    color:#fff;
+    position: relative;
+    z-index:500;
+    padding:50px 20px;
+  }
+  .portfolio:hover .label {
+    opacity: 1;
+    visibility: visible;
+  }
+  .portfolio .text-category {
+    display:block;
+  }
+  .portfolio .template-btn {
+    background: #e30b5d;
+    border: 1px solid #e30b5d;
+    text-decoration: none;
+    margin-top: 20px;
+    font-weight: 500
+  }
 @media only screen and (min-width: 1200px) and (max-width: 1399px){
     .container {
         max-width: 90%;
@@ -549,9 +727,12 @@ ul.nav-tabs button:hover {
     h1 {
         font-size: 42px;
     }
-    ul.nav-tabs button {
+    .portfolio-tab ul li{
         padding: 10px 10px;
        font-size: 14px;
+    }
+    .portfolio-tab ul{
+        width: 100%;
     }
     .nav-tabs li {
         padding: 10px 10px;

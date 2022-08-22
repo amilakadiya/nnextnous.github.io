@@ -134,3 +134,25 @@ $(window).bind('scroll', function () {
         $('.navbar').removeClass('fixed');
     }
 });
+
+$(function () {
+	var filterList = {
+		init: function () {
+			$('.portfolio-grid').mixItUp({
+				selectors: {
+  			  target: '.portfolio',
+  			  filter: '.filter'	
+  		  },
+  		  load: {
+    		  filter: 'all' // show app tab on first load
+    		}     
+			});								
+		}
+	};
+	// Run the show!
+	filterList.init();
+});
+setTimeout(function () {
+$('.filter:nth-child(1)').addClass('active');
+  
+},1000)
