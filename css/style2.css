@@ -618,6 +618,15 @@ footer{
     color: var(--blue-color);
     font-size: 29px;
 }
+.text-large:hover{
+    color: #fff;
+}
+.contact-detail-grid{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
 @media only screen and (min-width: 1200px) and (max-width: 1399px){
     .container {
         max-width: 90%;
