@@ -68,13 +68,15 @@ a:hover{
 .btn-blue{
     display: inline-block;
     width: auto;
+    min-width: 160px;
     height: auto;
     background-color: var(--blue-color);
     color: #FFFFFF;
-    padding: 15px 20px;
-    border-radius: 10px;
+    padding: 13px 16px;
+    border-radius: 50px;
     border: 1px solid var(--blue-color);
     transition: all 0.5s ease-in-out;
+    text-align: center;
 }
 .btn-blue:hover{
     color: var(--blue-color);

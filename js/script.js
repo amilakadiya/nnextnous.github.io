@@ -156,3 +156,7 @@ setTimeout(function () {
 $('.filter:nth-child(1)').addClass('active');
   
 },1000)
+
+$('.send-cv-btn').on('click',function() {
+  $('#exampleModalCenter').modal('show');
+});
