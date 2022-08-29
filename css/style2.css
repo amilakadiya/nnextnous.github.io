@@ -2,10 +2,10 @@
     --bg-color: #fff;
     --font-family:'DM Sans', sans-serif;
     --font-family-secondry: 'Poppins', sans-serif;
-    --color: #232323;
+    --color: #666666;;
     --blue-color:#3484fc;
     --color-light: #ECF2F6;
-    --light-blue-color: #000
+    --light-blue-color: #cfe0f9;
 }
 body{
     background-color: #F3F4F6;
@@ -347,6 +347,36 @@ footer{
     padding: 25px;
     border-radius: 12px;
     margin-top: 2rem;
+    position: relative;
+   overflow: hidden;
+   z-index: 1;
+   cursor: context-menu;
+}
+.about-services-img:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--light-blue-color);
+    transition: all 0.5s ease-in-out;
+    transform: scale(0);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.about-services-img:hover::before{
+    transform: scale(1);
+}
+/* .about-services-img h3,.about-services-img p{
+    transition: all 0.5s ease-in-out;
+}
+.about-services-img:hover h3,.about-services-img:hover p{
+    color: #ffffff;
+} */
+.about-services-img img {
+    padding-bottom: 10px;
 }
 .about-technologie-logo img{
     width: 60px;
@@ -358,9 +388,22 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 10px;
+   background-color: transparent;
+   border-radius: 15px;
+   transition: all 0.5s ease-in-out;
+   margin: 10px;
+}
+.about-technologie-logo:hover {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px -2px rgb(0 0 0 / 30%);
+}
+
+.about-technologie-logo h5 {
+    margin-bottom: 0px;
 }
 .about-technologies{
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 /* services */
 .services-boxs {
@@ -746,6 +789,48 @@ footer{
     margin-left: auto;
     margin-right: auto;
 }
+.modal-header {
+    border-bottom: 0px;
+    justify-content: center;
+}
+
+
+.modal-header button {
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    background: transparent;
+    border: 0px;
+    font-size: 50px;
+    font-weight: 200;
+    width: auto;
+    height: auto;
+    opacity: 0.5;
+    transition: all 0.5s ease-in-out;
+}
+.modal-header button:hover{
+    opacity: 1;
+}
+.modal-content{
+    border: 13px solid #eaebef;
+    border-radius: 20px;
+}
+.modal-title {
+    font-size: 30px;
+}
+.custom-file {
+    border: 1px solid #EFF1F6;
+    width: 100%;
+    height: 45px;
+    border-radius: 3px;
+}
+
+.custom-file input {
+    width: 100%;
+}
+.modal-lg {
+    --bs-modal-width: 1000px;
+}
 @keyframes shake {
     10%, 90% {
       transform: translate3d(-1px, 0, 0);
@@ -853,7 +938,7 @@ footer{
     }
     .nav-tabs{
         justify-content: center;
-    }
+    }      
 }
 @media only screen and (max-width: 767px) {
     .working-step:first-child {
