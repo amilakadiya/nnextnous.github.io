@@ -160,3 +160,6 @@ $('.filter:nth-child(1)').addClass('active');
 $('.send-cv-btn').on('click',function() {
   $('#exampleModalCenter').modal('show');
 });
+$("form").on("change", ".file-upload-field", function(){ 
+  $(this).parent(".file-upload-wrapper").attr("data-text",$(this).val().replace(/.*(\/|\\)/, ''),$(this).parent(".file-upload-wrapper").addClass('file-add') );
+});

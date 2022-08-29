@@ -190,12 +190,18 @@
                   </div>
                   <div class="col-12">
                     <div class="input-group mb-3">
-                        <div class="custom-file">
+                        <!-- <div class="custom-file">
                           <input type="file" class="custom-file-input" id="inputGroupFile01">
+                        </div> -->
+                        <div class="custom-file">
+                            <div class="file-upload-wrapper" data-text="Select your file!">
+                                <input name="file-upload-field" type="file" class="file-upload-field" value="">
+                              </div>
                         </div>
+                        
                       </div>
                   </div>
-                <div class="col-3">
+                <div class="col-12 text-right">
                   <button class="btn-blue" type="submit">Send Message</button>
                 </div>
             </form>
