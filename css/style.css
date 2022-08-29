@@ -84,6 +84,9 @@ a:hover{
     border-color: var(--blue-color);
 }
 /* navabr */
+.menu-open{
+    overflow: hidden;
+}
 nav{
     padding: 20px 0px 20px 00px !important;
     transition: all 0.5s ease-in-out;
