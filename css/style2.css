@@ -408,12 +408,18 @@ footer{
 .services-boxs {
     display: flex;
     justify-content: space-between;
-    background: linear-gradient(180deg, #eae9f7 0%, rgb(166 167 242 / 17%) 100%);
+    /* background: linear-gradient(180deg, #eae9f7 0%, rgb(166 167 242 / 17%) 100%);
     border: 1px solid;
-    border-image-source: linear-gradient(90deg, #ffffff 0%, rgb(175 199 214) 70.31%);
-    margin-bottom: 30px;
-    border-radius: 30px;
+    border-image-source: linear-gradient(90deg, #ffffff 0%, rgb(175 199 214) 70.31%); */
+    background-color: #ffffff;
+    margin-top: 2rem;
+    border-radius: 15px;
     padding: 20px;
+    box-shadow: 0 0 20px rgb(0 0 0 / 5%);
+    transition: all 0.5s ease-in-out;
+}
+.services-boxs:hover{
+    transform: translateY(-10px);
 }
 
 .services-boxs-left {
@@ -1017,7 +1023,7 @@ footer{
         display: none;
     }
     .navbar-brand img {
-        width: 200px;
+        width: 190px;
     }
     .tiitle-section {
         width: 100%;

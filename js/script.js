@@ -127,13 +127,18 @@ $('.Protfolio').slick({
 
   var num = 80; //number of pixels before modifying styles
 
-$(window).bind('scroll', function () {
-    if ($(window).scrollTop() > num) {
-        $('.navbar').addClass('fixed');
-    } else {
-        $('.navbar').removeClass('fixed');
-    }
-});
+  if($(window).width() < 767){
+
+    $(window).bind('scroll', function () {
+      if ($(window).scrollTop() > num) {
+          $('.navbar').addClass('fixed');
+      } else {
+          $('.navbar').removeClass('fixed');
+      }
+    });
+
+  } 
+
 
 $(function () {
 	var filterList = {
@@ -167,3 +172,16 @@ $("form").on("change", ".file-upload-field", function(){
 $('.navbar-toggler').on('click',function(){
   $('body').toggleClass('menu-open')
 })
+
+// $('.close').on('click',function(){
+//   $(this).parents('.modal').removeClass('show');
+//   $('body').removeClass('modal-open');
+//   $('body').css({"overflow": "auto","padding-right": "0px"});
+//   $(this).parents('.model').attr('aria-modal','');
+//   $(this).parents('.model').attr('role','');
+//   $(this).parents('.model').attr('aria-hidden','true');
+//   $(this).parents('.model').css('display','none');
+
+
+//   // role="dialog"
+// })
