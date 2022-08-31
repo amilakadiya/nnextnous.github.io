@@ -1294,18 +1294,24 @@ footer{
         font-size: 33px;
     }
     .slick-slide .protfolio-img img {
-        min-height: 200px;
-        max-height: 200px;
+        min-height: 280px;
+        max-height: 280px;
     }
     .protfolio-contain{        
-    width: 90%;
-    padding: 10px;
-    height: auto;
+        width: 90%;
+        padding: 10px;
+        height: auto;
     }
-    .protfolio-box {
+    .tiitle-container{
+        align-items: flex-start;
+    }
+    .explore-more {
+        margin-top: 10px;
+    }
+    /* .protfolio-box {
      
         margin: 10px 30px;
-    }
+    } */
     .slick-next {
         right: -8px;
     }
@@ -1340,7 +1346,10 @@ footer{
         right: 14px;
     }
     .protfolio-section {
-        width: 95%;
+        width: 93%;
+    }
+    .lets-work-section {
+        margin-top: 0rem;
     }
 }
 
