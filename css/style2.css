@@ -7,9 +7,10 @@
     --color-light: #ECF2F6;
     --light-blue-color: #cfe0f9;
     --header-color:#283653;
+    --box-back:#F3F4F6;
 }
 body{
-    background-color: #F3F4F6;
+    background-color: #ffffff;
 }
 .text-right{
     text-align: right;
@@ -28,8 +29,9 @@ body{
     left: 0px;
 }
 .slick-slide .protfolio-img img {
-    min-height: 400px;
-    max-height: 400px;
+    min-height: 350px;
+    max-height: 350px;
+    object-fit: cover;
 }
 .navbar-contain {
     background: #fff;
@@ -270,11 +272,12 @@ color: var(--blue-color);
     margin-top: 30px;  
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.14) 4.13%, rgba(255, 255, 255, 0.6) 80.29%);
     mix-blend-mode: normal;
-    backdrop-filter: blur(1.028px);
-    border-radius: 0px 20px 20px 0px;
+    backdrop-filter: blur(15.028px);
+    border-radius: 0px 10px 10px 0px;
     height: 100px;
     width: 60%;
     padding: 20px;      
+    max-width: 280px;
 }
 
 .protfolio-contain h5 {
@@ -440,7 +443,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 15px 20px 15px 20px;
     background-color: transparent;
     border-radius: 15px;
     transition: all 0.5s ease-in-out;
@@ -448,7 +451,7 @@ footer{
 }
 .about-technologie-logo:hover {
     background-color: #fff;
-    box-shadow: 0px 0px 10px -2px rgb(0 0 0 / 30%);
+    box-shadow: 0px 0px 7px 0px rgb(0 0 0 / 10%);
 }
 .about-technologie-logo h5 {
     margin-bottom: 0px;
@@ -522,13 +525,15 @@ footer{
     position: absolute;
     top: 65px;
     left: -100%;
-    background-color: #292930;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.14) 4.13%, rgba(255, 255, 255, 0.6) 80.29%);
+    /* background: linear-gradient(90deg, rgb(177 203 246 / 22%) 4.13%, rgb(202 223 254 / 48%) 80.29%) */
+    mix-blend-mode: normal;
+    backdrop-filter: blur(15.028px);
     padding: 30px 70px 30px 40px;
     border-radius: 0px 10px 10px 0px;
     transition: 0.8s;
     color: #fff;
 }
-
 .project-item {
     position: relative;
     overflow: hidden;
@@ -574,10 +579,11 @@ footer{
     justify-content: space-between;
     margin: auto;
     flex-wrap: wrap;
-    background: #fff;
+    background: var(--box-back);
     border: 0px;
     width: 85%;
     padding: 10px 20px;
+    border-radius: 10px;
   }
   .portfolio-tab ul li {
     color: #000;
@@ -607,8 +613,8 @@ footer{
   .portfolio-tab ul li.active{
     box-shadow: 0px 15px 30px rgb(57 81 105 / 5%);
     border: 0px;
-    background-color: #f3f4f6 !important;
-    border-radius: 0px;
+    background-color: #FFFFFF !important;
+    border-radius: 5px;
   }
   @media (max-width: 575.98px) {
     .portfolio-tab ul li {
@@ -711,6 +717,9 @@ footer{
     box-shadow: 0 9px 18px 0 rgb(0 0 0 / 25%);
     margin-bottom: 30px;
 }
+.contact-detail-box h3{
+    color: #ffffff;
+}
 .contact-detail-box p{
     color: #999FAE;
 }
@@ -732,7 +741,7 @@ footer{
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    background: #fff;
+    background: var(--box-back);
     padding: 30px;
     border-radius: 15px;
     position: relative;
@@ -793,7 +802,7 @@ footer{
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   perspective: 1000px;
-  box-shadow: 0px 0px 39px -2px #008a28;
+  box-shadow: 0px 0px 39px -2px #6a6a6a;
 }
 .career-box .btn-apply:hover{
     box-shadow: none;
@@ -826,7 +835,6 @@ footer{
     z-index: 1;
     bottom: 0px;
     top: 0px;
-    background: #f3f4f6;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -950,30 +958,55 @@ footer{
     cursor: pointer;
     width: 100%;
   }
-.tech-logo-box:nth-child(1) {
+  .tech-logo-box {   
+    border-radius: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 55px;
+    color: #fff;
+    align-items: center;
+    justify-content: center;    
     width: 135px;
     height: 135px;
+    margin: 0px 20px 15px;
+    background-color: #000;
+    animation: topbottom 1s infinite  alternate;
+}
+.tech-logo-box:nth-child(1) {
+    width: 125px;
+    height: 125px;
     background: #e34c26; 
-    margin: 0px 15px;
+    font-size: 55px;
+
 }
 .tech-logo-box:nth-child(2) {
     width: 105px;
     height: 105px;
     background: #264de4; 
+    animation: topbottom 1.5s infinite  alternate ease-in;
+}
+.tech-logo-box:nth-child(3) {
+    width: 125px;
+    height: 125px;
+    background: #264de4; 
+    animation: topbottom 2s infinite  alternate;
 }
 .tech-logo-grid{
     display: flex;
-}
-
-.tech-logo-box {
-   
-    border-radius: 50%;
-    display: flex;
-    font-size: 65px;
-    color: #fff;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
 }
+
+@keyframes topbottom {
+   0% {
+      transform: translateY(0px);
+    }
+
+   100% {
+    transform: translateY(-10px);
+    }
+  }
+
 @keyframes shake {
     10%, 90% {
       transform: translate3d(-1px, 0, 0);
