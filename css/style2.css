@@ -310,22 +310,27 @@ color: var(--blue-color);
     margin-top: 3rem;
 }
 .lets-work-shape{
-    display: none;
+    display: block;
 }
-.lets-work-contain {
-    position: initial;
-  
-    width: 100%;
-   
-}
+/* .lets-work-contain {
+    position: initial;  
+    width: 100%;   
+} */
 .lets-work{
     background: linear-gradient(310deg, rgba(52, 132, 252, 0.5) 100.13%, rgba(255, 255, 255, 0.6) 101.29%);
     mix-blend-mode: normal;
     border: 1px solid #FFFFFF;
     backdrop-filter: blur(19.028px);
-    padding: 40px 0px 50px 0px;
+    /* padding: 40px 0px 50px 0px; */
+    height: 380px;
     border-radius: 15px;
     box-shadow: 0px 1px 13px 0px rgb(0 0 0 / 10%);
+}
+.lets-work-shape-1, .lets-work-shape-2 {
+    width: 235px;
+}
+.lets-work-shape-1 {
+    bottom: 45px;
 }
 .lets-work-contain .subtitle{
     color: #FFFFFF;
