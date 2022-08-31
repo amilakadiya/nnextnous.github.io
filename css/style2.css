@@ -67,7 +67,7 @@ button.slick-arrow:hover{
 button.slick-arrow:focus{
     background: var(--blue-color);
 }
-.protfolio-box:not(.slick-center) {
+.services_protfolio .protfolio-box:not(.slick-center) {
     opacity: 0.5;
 }
 .navbar-contain {
@@ -354,6 +354,51 @@ color: var(--blue-color);
     margin-bottom: 3rem;
 }
 /* work toggether */
+/* work section */
+.lets-work-shape-1,.lets-work-shape-2{
+    width: 25%;
+}
+.lets-work-shape{
+    height: 500px;
+    position: relative;
+}
+.lets-work-shape-1 {
+    position: absolute;
+    bottom: -55px;
+}
+.lets-work-shape-2 {
+    position: absolute;
+    right: 0;
+    top: -95px;
+}
+.lets-work-contain{
+    position: absolute;
+    text-align: center;
+    top: 17%;
+    width: 40%;
+    right: 30%;
+}
+.lets-work-contain h2{
+    font-size: 50px;
+    color: #FFFFFF;
+}
+.lets-work-contain .subtitle{
+    font-size: 20px;
+}
+.lets-work{
+    position: relative;
+}
+.lets-work-section{
+    background: rgb(255,255,255);
+background: -moz-linear-gradient(174deg, rgba(255,255,255,1) 0%, rgba(194,219,255,1) 39%, rgba(210,228,255,1) 78%);
+background: -webkit-linear-gradient(174deg, rgba(255,255,255,1) 0%, rgba(194,219,255,1) 39%, rgba(210,228,255,1) 78%);
+background: linear-gradient(174deg, rgba(255,255,255,1) 0%, rgba(194,219,255,1) 39%, rgba(210,228,255,1) 78%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#d2e4ff",GradientType=1);
+margin-top: 5rem;
+margin-bottom: 5rem;
+padding: 0px !important;
+}
+
 .lets-work-section{
     background: transparent;
     margin-top: 3rem;
@@ -1232,6 +1277,70 @@ footer{
     .protfolio-box-contain {
         top: 39px;
         background-color: #292930;
+    }
+    .tech-logo-box:nth-child(1) {
+        width: 75px;
+        height: 75px;
+        font-size: 35px;
+    }
+    .tech-logo-box:nth-child(2) {
+        width: 65px;
+        height: 65px;
+        font-size: 33px;
+    }
+    .tech-logo-box:nth-child(3) {
+        width: 65px;
+        height: 65px;
+        font-size: 33px;
+    }
+    .slick-slide .protfolio-img img {
+        min-height: 200px;
+        max-height: 200px;
+    }
+    .protfolio-contain{        
+    width: 90%;
+    padding: 10px;
+    height: auto;
+    }
+    .protfolio-box {
+     
+        margin: 10px 30px;
+    }
+    .slick-next {
+        right: -8px;
+    }
+    .slick-prev {
+        left: -5px;
+    }
+    .protfolio-contain span{
+        font-size: 14px;
+
+    }
+    .protfolio-contain h5 {
+        font-size: 20px;
+    }
+    .tech-logo-box {
+        width: 75px;
+        height: 75px;
+        font-size: 33px;
+    }
+    .lets-work-contain {
+     
+        width: 100%;
+        right: 0;
+    }
+    .lets-work-shape img{
+        display: none;
+    }
+    .fixed {
+        z-index: 555;
+        padding-top: 30px !important;
+    }
+    .working-step:before{
+        right: 14px;
+    }
+    .protfolio-section {
+        width: 95%;
     }
 }
 

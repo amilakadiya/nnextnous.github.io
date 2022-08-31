@@ -93,6 +93,7 @@ $('.protfolio-section .Protfolio').slick({
             slidesToShow: 2,
             slidesToScroll: 2,
             adaptiveHeight: true,
+            centerMode: false,
           },
         },
         {
@@ -100,6 +101,7 @@ $('.protfolio-section .Protfolio').slick({
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
+            centerMode: false,
           },
         },
       ]

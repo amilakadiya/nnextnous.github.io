@@ -505,50 +505,6 @@ nav.navbar.navbar-expand-lg.sticky-top.fixed {
     width: 100%;
     height: 100%;
 }
-/* work section */
-.lets-work-shape-1,.lets-work-shape-2{
-    width: 25%;
-}
-.lets-work-shape{
-    height: 500px;
-    position: relative;
-}
-.lets-work-shape-1 {
-    position: absolute;
-    bottom: -55px;
-}
-.lets-work-shape-2 {
-    position: absolute;
-    right: 0;
-    top: -95px;
-}
-.lets-work-contain{
-    position: absolute;
-    text-align: center;
-    top: 22%;
-    width: 40%;
-    right: 30%;
-}
-.lets-work-contain h2{
-    font-size: 50px;
-    color: #FFFFFF;
-}
-.lets-work-contain .subtitle{
-    font-size: 20px;
-}
-.lets-work{
-    position: relative;
-}
-.lets-work-section{
-    background: rgb(255,255,255);
-background: -moz-linear-gradient(174deg, rgba(255,255,255,1) 0%, rgba(194,219,255,1) 39%, rgba(210,228,255,1) 78%);
-background: -webkit-linear-gradient(174deg, rgba(255,255,255,1) 0%, rgba(194,219,255,1) 39%, rgba(210,228,255,1) 78%);
-background: linear-gradient(174deg, rgba(255,255,255,1) 0%, rgba(194,219,255,1) 39%, rgba(210,228,255,1) 78%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#d2e4ff",GradientType=1);
-margin-top: 5rem;
-margin-bottom: 5rem;
-padding: 0px !important;
-}
 .contact-info-contain ul li{
     display: flex;
     align-items: center;
