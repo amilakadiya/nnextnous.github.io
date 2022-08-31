@@ -27,7 +27,7 @@ body{
     left: 0px;
 }
 .slick-slide .protfolio-img img {
-    min-height: 320px;
+    min-height: 400px;
     max-height: 400px;
 }
 .navbar-contain {
