@@ -898,7 +898,30 @@ footer{
     cursor: pointer;
     width: 100%;
   }
-  
+.tech-logo-box:nth-child(1) {
+    width: 135px;
+    height: 135px;
+    background: #e34c26; 
+    margin: 0px 15px;
+}
+.tech-logo-box:nth-child(2) {
+    width: 105px;
+    height: 105px;
+    background: #264de4; 
+}
+.tech-logo-grid{
+    display: flex;
+}
+
+.tech-logo-box {
+   
+    border-radius: 50%;
+    display: flex;
+    font-size: 65px;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+}
 @keyframes shake {
     10%, 90% {
       transform: translate3d(-1px, 0, 0);
