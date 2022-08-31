@@ -50,7 +50,7 @@ function deleting(textIndex, text) {
     }, sPerChar * 1000); 
 }
 
-$('.Protfolio').slick({
+$('.protfolio-section .Protfolio').slick({
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 3,
@@ -74,8 +74,35 @@ $('.Protfolio').slick({
             slidesToScroll: 1,
           },
         },
-      ],
-    
+      ]
+  });
+  
+  $('.services_protfolio .Protfolio').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    dots: true,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    arrows: true,
+    centerMode: true,
+    responsive: [
+        {
+          breakpoint: 994,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            adaptiveHeight: true,
+          },
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+      ]
   });
   
   $('.about-technologies').slick({

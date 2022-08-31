@@ -33,6 +33,43 @@ body{
     max-height: 350px;
     object-fit: cover;
 }
+.services_protfolio  {
+    width: 94%;
+    margin: 0 auto;
+}
+.slick-center {
+    opacity: 1;
+}
+button.slick-arrow {
+    width: 45px;
+    height: 45px;
+    background: var(--blue-color);
+    z-index: 35;
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out;
+}
+.slick-prev:hover:before, .slick-next:hover:before{
+    color: var(--blue-color);
+}
+.slick-prev:before, .slick-next:before{
+   opacity: 1;
+}
+.slick-prev:focus:before, .slick-next:focus:before{
+    color: #ffffff;
+}
+.slick-prev::before, .slick-next::before{
+    transition: all 0.5s ease-in-out;
+}
+button.slick-arrow:hover{
+    border: 1px solid var(--blue-color);
+    background: var(--light-blue-color);
+}
+button.slick-arrow:focus{
+    background: var(--blue-color);
+}
+.protfolio-box:not(.slick-center) {
+    opacity: 0.5;
+}
 .navbar-contain {
     background: #fff;
     box-shadow: 0px 1px 13px 0px rgb(0 0 0 / 10%);
@@ -450,7 +487,7 @@ footer{
     margin: 10px;
 }
 .about-technologie-logo:hover {
-    background-color: #fff;
+    background-color: var(--box-back);
     box-shadow: 0px 0px 7px 0px rgb(0 0 0 / 10%);
 }
 .about-technologie-logo h5 {
