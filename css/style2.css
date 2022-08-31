@@ -1308,6 +1308,9 @@ footer{
     .explore-more {
         margin-top: 10px;
     }
+    footer {
+        margin: 2rem 0px 3rem 0px;
+    }
     /* .protfolio-box {
      
         margin: 10px 30px;
