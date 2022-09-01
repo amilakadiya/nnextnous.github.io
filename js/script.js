@@ -214,3 +214,10 @@ $('.navbar-toggler').on('click',function(){
 
 //   // role="dialog"
 // })
+
+
+$(document).ready(function(){
+  $(".hamburger").click(function(){
+    $(this).toggleClass("is-active");
+  });
+});

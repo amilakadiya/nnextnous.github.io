@@ -5,7 +5,9 @@
     --color: #666666;;
     --blue-color:#3484fc;
     --color-light: #ECF2F6;
-    --light-blue-color: #000
+    --light-blue-color: #cfe0f9;
+    --header-color:#283653;
+    --box-back:#F3F4F6;
 }
 body {
     background-color: var(--bg-color);
@@ -137,10 +139,70 @@ nav.navbar.navbar-expand-lg.sticky-top.fixed {
     background: #fff;
     box-shadow: 1px -2px 20px 0px rgb(0 0 0 / 15%);
 }
+.hamburger .line{
+    width: 30px;
+    height: 3px;
+    background-color: var(--header-color);
+    display: block;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .hamburger:hover{
+    cursor: pointer;
+  }
+  #hamburger-6.is-active{
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition-delay: 0.6s;
+    -o-transition-delay: 0.6s;
+    transition-delay: 0.6s;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  #hamburger-6.is-active .line:nth-child(2){
+    width: 0px;
+  }
+  
+  #hamburger-6.is-active .line:nth-child(1),
+  #hamburger-6.is-active .line:nth-child(3){
+    -webkit-transition-delay: 0.3s;
+    -o-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+  }
+  
+  #hamburger-6.is-active .line:nth-child(1){
+    -webkit-transform: translateY(13px);
+    -ms-transform: translateY(13px);
+    -o-transform: translateY(13px);
+    transform: translateY(13px);
+  }
+  
+  #hamburger-6.is-active .line:nth-child(3){
+    -webkit-transform: translateY(-3px) rotate(90deg);
+    -ms-transform: translateY(-3px) rotate(90deg);
+    -o-transform: translateY(-3px) rotate(90deg);
+    transform: translateY(-3px) rotate(90deg);
+  }
+  .navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
 .fixed {
     background: #fff;
     position: fixed;
     width: 100%;
+    z-index: 1111;
 }
 .we-hiring{
     max-width: 180px;
